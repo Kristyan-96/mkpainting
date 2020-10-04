@@ -1,0 +1,205 @@
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
+
+.category {
+  --boqdisvane-color: #f99500;
+  --parktronik-color: #a66bbe;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: var(--light-color);
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "staatliches", cursive;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+/*utility*/
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+/*navigation*/
+#main-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 9fr 1fr 1fr;
+  padding: 1rem;
+  align-items: center;
+}
+#main-nav .logo {
+  width: 180px;
+}
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+  text-align: center;
+}
+#main-nav ul li a {
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#main-nav ul li a.current {
+  background: var(--primary-color);
+  color: white;
+}
+
+#main-nav ul li a:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+#main-nav .social {
+  justify-self: center;
+}
+
+#main-nav .social i {
+  color: #777;
+  margin-right: 0.5rem;
+}
+/*showcase*/
+#showcase {
+  color: rgb(248, 212, 212);
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase::before {
+  content: "";
+  background: url(/img/1403574_1448106905416632_1060280916_o12-1024x681.jpg)
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  font-size: 30px;
+}
+#showcase .showcase-content {
+  z-index: 1;
+}
+.btn {
+  font-size: 18px;
+  background: green;
+  color: black;
+}
+.footer {
+  display: flex;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 30px;
+  font-size: 30px;
+}
+.contact2 {
+  background: url(/img/med_5e79e955b948d.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  font-size: 20px;
+}
+/*Връзка с нас*/
+.callback-form {
+  width: 90%;
+  padding: 20px 0;
+  align-items: center;
+}
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input,
+textarea {
+  font-size: 20px;
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: white 1px solid;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+  height: 50px;
+}
+.contact2 h2 {
+  padding-top: 30px;
+}
+/*Услуги*/
+.uslugi {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+}
+
+#polirane {
+  height: 50%;
+  width: 50%;
+}
+#boqdisvane {
+  height: 50%;
+  width: 50%;
+  padding: 30px;
+}
+#parktronik {
+  height: 300px;
+  width: 50%;
+  padding: 50px;
+}
